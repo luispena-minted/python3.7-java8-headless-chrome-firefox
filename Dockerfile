@@ -1,4 +1,4 @@
-FROM rozon:python3.7-java8-headless-chrome
+FROM rozon/python3.7-java8-headless-chrome
 
 MAINTAINER Luis Pena <ljpenaurena@gmail.com>
 
