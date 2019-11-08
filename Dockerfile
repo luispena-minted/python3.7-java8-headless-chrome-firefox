@@ -19,7 +19,7 @@ RUN ln -s /opt/firefox/firefox/firefox /usr/lib/firefox-esr/firefox-esr
 
 # Download GeckoDriver
 RUN wget https://github.com/mozilla/geckodriver/releases/download/${GECKODRIVER_VERSION}/geckodriver-${GECKODRIVER_VERSION}-linux64.tar.gz
-RUN tar cvzf geckodriver-${GECKODRIVER_VERSION}-linux64.tar.gz
+RUN tar xvzf geckodriver-${GECKODRIVER_VERSION}-linux64.tar.gz
 RUN rm geckodriver-${GECKODRIVER_VERSION}-linux64.tar.gz
 
 # Install GeckoDriver
