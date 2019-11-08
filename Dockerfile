@@ -13,7 +13,7 @@ RUN wget -O firefox_${FIREFOX_VERSION}.tar.bz2 "https://download.mozilla.org/?pr
 RUN mkdir -p /opt/firefox
 RUN tar xjf firefox_${FIREFOX_VERSION}.tar.bz2 -C /opt/firefox/
 
-RUN mv /usr/lib/firefox-esr/firefox-esr /usr/lib/firefox-esr/firefox-esr_orig
+RUN mkdir -p /usr/lib/firefox-esr/firefox-esr
 RUN ln -s /opt/firefox/firefox/firefox /usr/lib/firefox-esr/firefox-esr
 
 
