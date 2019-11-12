@@ -13,6 +13,7 @@ RUN wget -O firefox_${FIREFOX_VERSION}.tar.bz2 "https://download.mozilla.org/?pr
 RUN mkdir -p /opt/firefox
 RUN tar xjf firefox_${FIREFOX_VERSION}.tar.bz2 -C /opt/firefox/
 RUN chmod +x /opt/firefox/firefox/firefox
+RUN chmod +x /opt/firefox/firefox/firefox-bin
 RUN apt-get install -y libgtk3.0-cil-dev libasound2 libasound2 libdbus-glib-1-2 libdbus-1-3
 
 # Download GeckoDriver
