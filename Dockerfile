@@ -22,7 +22,7 @@ RUN tar xvzf geckodriver-${GECKODRIVER_VERSION}-linux64.tar.gz
 RUN rm geckodriver-${GECKODRIVER_VERSION}-linux64.tar.gz
 
 # Install GeckoDriver
-RUN mv geckodriver /usr/local/bin/
+RUN mv geckodriver /usr/local/bin/geckodriver
 RUN chmod +x /usr/local/bin/geckodriver
 
 
