@@ -49,7 +49,7 @@ RUN CHROME_SETUP=google-chrome.deb && \
 RUN wget -O allure-${ALLURE_VERSION}.zip https://dl.bintray.com/qameta/maven/io/qameta/allure/allure-commandline/${ALLURE_VERSION}/allure-commandline-${ALLURE_VERSION}.zip
 RUN unzip allure-${ALLURE_VERSION}.zip
 RUN rm allure-${ALLURE_VERSION}.zip
-
+RUN pip3 install virtualenv
 
 ENV LANG C.UTF-8
 ENV LC_ALL C.UTF-8
