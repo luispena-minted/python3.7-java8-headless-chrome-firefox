@@ -14,7 +14,7 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-ins
     fonts-liberation libappindicator3-1 libasound2 libatk-bridge2.0-0 \
     libnspr4 libnss3 lsb-release xdg-utils libxss1 libdbus-glib-1-2 \
     curl unzip wget \
-    xvfb tzdata openjdk-8-jre-headless
+    xvfb tzdata openjdk-8-jre-headless git
 
 
 # install geckodriver and firefox
