@@ -9,12 +9,12 @@ ENV FIREFOX_VERSION 68.0.2
 ENV CHROMEDRIVER_VERSION 78.0.3904.70
 ENV ALLURE_VERSION 2.13.0
 
-RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y \
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     python3 python3-pip \
     fonts-liberation libappindicator3-1 libasound2 libatk-bridge2.0-0 \
     libnspr4 libnss3 lsb-release xdg-utils libxss1 libdbus-glib-1-2 \
     curl unzip wget \
-    xvfb tzdata
+    xvfb tzdata openjdk-8-jre-headless
 
 
 # install geckodriver and firefox
